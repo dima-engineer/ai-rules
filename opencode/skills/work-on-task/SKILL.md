@@ -1,6 +1,6 @@
 ---
 name: Work on Task
-description: Use when the user wants to start work on a task, given as a ticket ID (e.g. BL-012, #42, PROJ-123), a task file path, or a plain-text description. Runs a structured flow - read the task, explore the code, ask questions, get plan approval, implement, report.
+description: "Use when the user wants to start work on a task, given as a ticket ID (e.g. BL-012, #42, PROJ-123), a task file path, or a plain-text description. Runs a structured flow - read the task, explore the code, ask questions, get plan approval, implement, report."
 ---
 
 # Work on Task
@@ -70,10 +70,4 @@ Execute the approved plan. Track progress with the todo list and mark each step 
 2. **What to test**: specific scenarios as a checklist.
 3. **How to test**: concrete commands, UI flows, or API calls.
 
-## Step 10 — Mark the task as done
-
-Only after the user confirms the task is complete, update it in its source system:
-- **Local file backlog**: set `**Status**: Done`, check all acceptance criteria (`- [x]`), and move the file to a `done/` subfolder if one exists next to it.
-- **GitHub Issues or PRs**: close the issue or mark the PR ready.
-- **Jira, Linear, or others**: set the status to Done/Closed via the appropriate tool.
-- **Plain text description**: nothing to update. Just confirm completion.
+Do not change the task's status or close it in any tracker. The user handles that.
